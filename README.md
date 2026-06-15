@@ -6,7 +6,7 @@ An automated health screening station built on Arduino Nano that measures body t
 
 ## 📸 Demo
 
-> *(Add project photos here)*
+![Project Photo 1](images/pic.png)
 
 ---
 
