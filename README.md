@@ -98,18 +98,9 @@ Normal temperature range is set to **36.5°C – 38.5°C**.
 
 ---
 
-## 👥 Team
-
-> *(Add team members here)*
-
----
 
 ## 🎓 About
 
 Built as part of Mechatronics Engineering studies at **Horus University Egypt (HUE)**.
 
----
 
-## 📄 License
-
-MIT License — free to use and modify with attribution.
