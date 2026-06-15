@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" width="1100" height="780" font-family="'Courier New', monospace">
+
+  <!-- Background -->
+  <rect width="1100" height="780" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="550" y="36" text-anchor="middle" fill="#58a6ff" font-size="20" font-weight="bold" letter-spacing="2">SMART HEALTH MONITORING &amp; SANITIZATION STATION</text>
+  <text x="550" y="56" text-anchor="middle" fill="#8b949e" font-size="12">Wiring Diagram — Arduino Nano</text>
+  <line x1="60" y1="66" x2="1040" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- ARDUINO NANO — Center -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="420" y="200" width="260" height="400" rx="8" fill="#161b22" stroke="#30363d" stroke-width="2"/>
+  <rect x="420" y="200" width="260" height="28" rx="8" fill="#1f6feb"/>
+  <text x="550" y="219" text-anchor="middle" fill="white" font-size="13" font-weight="bold">ARDUINO NANO</text>
+
+  <!-- Left pins -->
+  <text x="432" y="250" fill="#8b949e" font-size="10">D2  TRIG</text>
+  <text x="432" y="270" fill="#8b949e" font-size="10">D3  ECHO</text>
+  <text x="432" y="290" fill="#8b949e" font-size="10">D4  IR</text>
+  <text x="432" y="310" fill="#ff7b72" font-size="10">D5  LED_RED</text>
+  <text x="432" y="330" fill="#3fb950" font-size="10">D6  LED_GRN</text>
+  <text x="432" y="350" fill="#e3b341" font-size="10">D7  BUZZER</text>
+  <text x="432" y="370" fill="#8b949e" font-size="10">D8  SPRAY</text>
+  <text x="432" y="390" fill="#8b949e" font-size="10">D9  BTN_START</text>
+  <text x="432" y="410" fill="#8b949e" font-size="10">D10 BTN_RESET</text>
+  <text x="432" y="430" fill="#e3b341" font-size="10">D12 BTN_LIGHT</text>
+  <text x="432" y="450" fill="#e3b341" font-size="10">D13 LED_LIGHT</text>
+
+  <!-- Right pins -->
+  <text x="558" y="490" fill="#58a6ff" font-size="10" text-anchor="start">A4  SDA ──┐</text>
+  <text x="558" y="510" fill="#58a6ff" font-size="10" text-anchor="start">A5  SCL ──┤ I2C BUS</text>
+  <text x="558" y="540" fill="#ff7b72" font-size="10" text-anchor="start">5V</text>
+  <text x="558" y="560" fill="#8b949e" font-size="10" text-anchor="start">3.3V</text>
+  <text x="558" y="580" fill="#3fb950" font-size="10" text-anchor="start">GND</text>
+
+  <!-- Pin dots left -->
+  <circle cx="422" cy="247" r="4" fill="#1f6feb"/>
+  <circle cx="422" cy="267" r="4" fill="#1f6feb"/>
+  <circle cx="422" cy="287" r="4" fill="#1f6feb"/>
+  <circle cx="422" cy="307" r="4" fill="#ff7b72"/>
+  <circle cx="422" cy="327" r="4" fill="#3fb950"/>
+  <circle cx="422" cy="347" r="4" fill="#e3b341"/>
+  <circle cx="422" cy="367" r="4" fill="#1f6feb"/>
+  <circle cx="422" cy="387" r="4" fill="#1f6feb"/>
+  <circle cx="422" cy="407" r="4" fill="#1f6feb"/>
+  <circle cx="422" cy="427" r="4" fill="#e3b341"/>
+  <circle cx="422" cy="447" r="4" fill="#e3b341"/>
+
+  <!-- Pin dots right -->
+  <circle cx="678" cy="487" r="4" fill="#58a6ff"/>
+  <circle cx="678" cy="507" r="4" fill="#58a6ff"/>
+  <circle cx="678" cy="537" r="4" fill="#ff7b72"/>
+  <circle cx="678" cy="557" r="4" fill="#8b949e"/>
+  <circle cx="678" cy="577" r="4" fill="#3fb950"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- HC-SR04 — Top Left -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="60" y="90" width="160" height="100" rx="6" fill="#161b22" stroke="#1f6feb" stroke-width="1.5"/>
+  <text x="140" y="110" text-anchor="middle" fill="#1f6feb" font-size="11" font-weight="bold">HC-SR04</text>
+  <text x="140" y="126" text-anchor="middle" fill="#8b949e" font-size="9">Ultrasonic Distance</text>
+  <text x="72" y="148" fill="#8b949e" font-size="10">VCC → 5V</text>
+  <text x="72" y="163" fill="#8b949e" font-size="10">TRIG → D2</text>
+  <text x="72" y="178" fill="#8b949e" font-size="10">ECHO → D3    GND → GND</text>
+
+  <!-- Lines HC-SR04 to Nano -->
+  <line x1="140" y1="190" x2="260" y2="247" stroke="#1f6feb" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="140" y1="190" x2="260" y2="267" stroke="#1f6feb" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- MLX90614 — Top Center-Left -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="240" y="90" width="155" height="100" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="317" y="110" text-anchor="middle" fill="#58a6ff" font-size="11" font-weight="bold">MLX90614</text>
+  <text x="317" y="126" text-anchor="middle" fill="#8b949e" font-size="9">IR Body Temp Sensor</text>
+  <text x="252" y="148" fill="#8b949e" font-size="10">VCC → 3.3V</text>
+  <text x="252" y="163" fill="#58a6ff" font-size="10">SDA → A4</text>
+  <text x="252" y="178" fill="#58a6ff" font-size="10">SCL → A5    GND → GND</text>
+
+  <!-- Line MLX to I2C bus -->
+  <line x1="317" y1="190" x2="480" y2="487" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- BMP280 — Top Center-Right -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="600" y="90" width="155" height="100" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="677" y="110" text-anchor="middle" fill="#58a6ff" font-size="11" font-weight="bold">BMP280</text>
+  <text x="677" y="126" text-anchor="middle" fill="#8b949e" font-size="9">Temp &amp; Pressure</text>
+  <text x="612" y="148" fill="#8b949e" font-size="10">VCC → 3.3V</text>
+  <text x="612" y="163" fill="#58a6ff" font-size="10">SDA → A4</text>
+  <text x="612" y="178" fill="#58a6ff" font-size="10">SCL → A5    GND → GND</text>
+
+  <!-- Line BMP to I2C bus -->
+  <line x1="677" y1="190" x2="620" y2="487" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- OLED — Top Right -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="860" y="90" width="180" height="100" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="950" y="110" text-anchor="middle" fill="#58a6ff" font-size="11" font-weight="bold">OLED SSD1306</text>
+  <text x="950" y="126" text-anchor="middle" fill="#8b949e" font-size="9">128×64 I2C Display</text>
+  <text x="872" y="148" fill="#8b949e" font-size="10">VCC → 5V (external)</text>
+  <text x="872" y="163" fill="#58a6ff" font-size="10">SDA → A4</text>
+  <text x="872" y="178" fill="#58a6ff" font-size="10">SCL → A5    GND → GND</text>
+
+  <!-- Line OLED to I2C bus -->
+  <line x1="870" y1="190" x2="650" y2="487" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- IR SENSOR — Left -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="60" y="250" width="150" height="85" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="135" y="270" text-anchor="middle" fill="#e3b341" font-size="11" font-weight="bold">IR SENSOR</text>
+  <text x="135" y="285" text-anchor="middle" fill="#8b949e" font-size="9">Hand Detection</text>
+  <text x="72" y="305" fill="#8b949e" font-size="10">VCC → 5V</text>
+  <text x="72" y="320" fill="#8b949e" font-size="10">OUT → D4</text>
+  <text x="72" y="335" fill="#8b949e" font-size="10">GND → GND</text>
+
+  <line x1="210" y1="305" x2="422" y2="287" stroke="#e3b341" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- LEDs — Left -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="60" y="360" width="150" height="110" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="135" y="380" text-anchor="middle" fill="#e3b341" font-size="11" font-weight="bold">LEDs + BUZZER</text>
+  <text x="72" y="400" fill="#ff7b72" font-size="10">LED RED  → D5 (330Ω)</text>
+  <text x="72" y="416" fill="#3fb950" font-size="10">LED GRN  → D6 (330Ω)</text>
+  <text x="72" y="432" fill="#e3b341" font-size="10">LED LIGHT→ D13(330Ω)</text>
+  <text x="72" y="448" fill="#e3b341" font-size="10">BUZZER   → D7</text>
+  <text x="72" y="464" fill="#8b949e" font-size="10">All GND  → GND</text>
+
+  <line x1="210" y1="400" x2="422" y2="307" stroke="#ff7b72" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="210" y1="416" x2="422" y2="327" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="210" y1="448" x2="422" y2="347" stroke="#e3b341" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- BUTTONS — Left Bottom -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="60" y="500" width="150" height="105" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="135" y="520" text-anchor="middle" fill="#e3b341" font-size="11" font-weight="bold">BUTTONS</text>
+  <text x="72" y="540" fill="#8b949e" font-size="10">START → D9</text>
+  <text x="72" y="556" fill="#8b949e" font-size="10">RESET → D10</text>
+  <text x="72" y="572" fill="#8b949e" font-size="10">LIGHT → D12</text>
+  <text x="72" y="588" fill="#8b949e" font-size="10">All: pin→GND (INPUT_PULLUP)</text>
+  <text x="72" y="601" fill="#8b949e" font-size="9">(no resistor needed)</text>
+
+  <line x1="210" y1="540" x2="422" y2="387" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="210" y1="556" x2="422" y2="407" stroke="#8b949e" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="210" y1="572" x2="422" y2="427" stroke="#e3b341" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- 2N2222 + SPRAY — Right -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="880" y="280" width="195" height="150" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="977" y="300" text-anchor="middle" fill="#e3b341" font-size="11" font-weight="bold">SPRAY CIRCUIT</text>
+  <text x="977" y="316" text-anchor="middle" fill="#8b949e" font-size="9">2N2222 Transistor</text>
+  <text x="892" y="340" fill="#8b949e" font-size="10">D8 ──[1kΩ]── Base</text>
+  <text x="892" y="358" fill="#8b949e" font-size="10">Collector ── Pump (–)</text>
+  <text x="892" y="376" fill="#8b949e" font-size="10">Emitter  ── GND</text>
+  <text x="892" y="394" fill="#ff7b72" font-size="10">Pump (+) ── VCC (12V)</text>
+  <text x="892" y="412" fill="#8b949e" font-size="10">1N4007 diode across pump</text>
+  <text x="892" y="425" fill="#8b949e" font-size="9">(flyback protection)</text>
+
+  <line x1="880" y1="367" x2="678" y2="367" stroke="#e3b341" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- I2C BUS NOTE -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="700" y="490" width="220" height="65" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="810" y="510" text-anchor="middle" fill="#58a6ff" font-size="10" font-weight="bold">I2C BUS (Shared)</text>
+  <text x="810" y="528" text-anchor="middle" fill="#8b949e" font-size="9">MLX90614 @ 0x5A</text>
+  <text x="810" y="542" text-anchor="middle" fill="#8b949e" font-size="9">BMP280 @ 0x76  |  OLED @ 0x3C</text>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- POWER NOTE -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <rect x="420" y="625" width="260" height="80" rx="6" fill="#161b22" stroke="#ff7b72" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="550" y="645" text-anchor="middle" fill="#ff7b72" font-size="10" font-weight="bold">⚡ POWER NOTES</text>
+  <text x="550" y="661" text-anchor="middle" fill="#8b949e" font-size="9">OLED → External 5V (not Nano 3.3V)</text>
+  <text x="550" y="676" text-anchor="middle" fill="#8b949e" font-size="9">Sensors → Nano 3.3V pin</text>
+  <text x="550" y="691" text-anchor="middle" fill="#8b949e" font-size="9">All GNDs must be common</text>
+
+  <!-- Footer -->
+  <line x1="60" y1="722" x2="1040" y2="722" stroke="#21262d" stroke-width="1"/>
+  <text x="550" y="742" text-anchor="middle" fill="#484f58" font-size="10">Mechatronics Engineering — Horus University Egypt</text>
+  <text x="550" y="758" text-anchor="middle" fill="#484f58" font-size="10">Smart Health Monitoring &amp; Sanitization Station</text>
+
+</svg>
